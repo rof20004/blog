@@ -11,7 +11,7 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Blog do Rodolfo do Nascimento Azevedo com artigos, notícias e muito mais sobre o mundo da programação' }
+      { hid: 'description', name: 'description', content: 'Blog do Rodolfo do Nascimento Azevedo com artigos, notícias e muito mais sobre minhas experiências com programação e linux' }
     ],
     noscript: [{ innerHTML: 'This website requires JavaScript.' }],
     link: [
