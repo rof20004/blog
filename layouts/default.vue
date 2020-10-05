@@ -26,7 +26,10 @@
 
       <v-divider />
 
-      <v-list>
+      <v-list
+        dense
+        nav
+      >
         <v-list-item
           v-for="(item, i) in items"
           :key="i"
