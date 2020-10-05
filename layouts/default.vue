@@ -52,6 +52,7 @@
     >
       <v-app-bar-nav-icon
         v-if="$vuetify.breakpoint.mobile"
+        aria-label="Abrir drawer"
         @click.stop="drawer = !drawer"
       />
 
@@ -77,7 +78,7 @@
           hide-details
           prepend-icon="mdi-magnify"
           single-line
-          placeholder="Pesquisar artigo"
+          label="Pesquisar artigo"
         />
       </v-toolbar>
     </v-app-bar>
