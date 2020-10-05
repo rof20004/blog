@@ -1,0 +1,9 @@
+[
+    {
+        "uuid": "8d262e87-836c-415c-afe5-9e13381223df",
+        "title": "Como criar e executar um site estático ultra rápido com Nuxt e Netlify",
+        "date": "2020-10-04T22:34:14.839Z",
+        "description": "Neste artigo vou mostrar como criar um projeto com Nuxt e realizar o deploy no Netlify, um dos mais rápidos CDN da atualidade, utilizando continuous delivery com github.",
+        "path": "/articles/8d262e87-836c-415c-afe5-9e13381223df"
+    }
+]

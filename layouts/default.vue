@@ -7,17 +7,18 @@
     >
       <v-list-item>
         <v-list-item-content>
-          <v-list-item-title class="title text-center">
+          <v-list-item-title class="title d-flex justify-center">
             <v-img
               lazy-src="https://picsum.photos/id/11/10/6"
-              :aspect-ratio="4/4"
+              max-height="200"
+              max-width="200"
               src="/itsme.jpg"
-              class="rounded"
+              class="rounded-circle"
             />
           </v-list-item-title>
           <v-list-item-subtitle class="text-center overline mt-4">
             <div class="white darken-2 text-center black--text text-wrap">
-              Software Developer, Gamer, Musician, Food lover and Father
+              Software Developer, Musician, Food lover and Father
             </div>
           </v-list-item-subtitle>
         </v-list-item-content>
@@ -25,16 +26,12 @@
 
       <v-divider />
 
-      <v-list
-        dense
-        nav
-      >
+      <v-list>
         <v-list-item
           v-for="(item, i) in items"
           :key="i"
           :to="item.to"
-          router
-          exact
+          nuxt
         >
           <v-list-item-action>
             <v-icon>{{ item.icon }}</v-icon>
@@ -59,7 +56,21 @@
         flat
         dense
       >
+        <v-spacer v-if="$route.path !== '/'" />
+
+        <v-btn
+          v-if="$route.path !== '/'"
+          depressed
+          to="/"
+        >
+          <v-icon>
+            mdi-arrow-left
+          </v-icon>
+          Voltar
+        </v-btn>
+
         <v-text-field
+          v-if="$route.path === '/'"
           hide-details
           prepend-icon="mdi-magnify"
           single-line
