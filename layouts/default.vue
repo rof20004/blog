@@ -9,7 +9,6 @@
         <v-list-item-content>
           <v-list-item-title class="title d-flex justify-center">
             <v-img
-              lazy-src="https://picsum.photos/id/11/10/6"
               max-height="200"
               max-width="200"
               src="/itsme.jpg"
