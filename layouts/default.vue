@@ -9,6 +9,7 @@
         <v-list-item-content>
           <v-list-item-title class="title d-flex justify-center">
             <v-img
+              lazy-src="https://picsum.photos/id/11/10/6"
               max-height="200"
               max-width="200"
               src="/itsme.jpg"
@@ -25,7 +26,10 @@
 
       <v-divider />
 
-      <v-list nav>
+      <v-list
+        dense
+        nav
+      >
         <v-list-item
           v-for="(item, i) in items"
           :key="i"
@@ -33,10 +37,7 @@
           nuxt
         >
           <v-list-item-action>
-            <span
-              style="font-size: 24px;"
-              v-html="item.icon"
-            />
+            <v-icon>{{ item.icon }}</v-icon>
           </v-list-item-action>
           <v-list-item-content>
             <v-list-item-title v-text="item.title" />
@@ -66,22 +67,16 @@
           depressed
           to="/"
         >
-          <span
-            style="font-size: 24px;"
-            v-html="'&#11013;'"
-          />
+          <v-icon>
+            mdi-arrow-left
+          </v-icon>
           Voltar
         </v-btn>
-
-        <span
-          v-if="$route.path === '/'"
-          style="font-size: 24px;"
-          v-html="'&#128269;'"
-        />
 
         <v-text-field
           v-if="$route.path === '/'"
           hide-details
+          prepend-icon="mdi-magnify"
           single-line
           label="Pesquisar artigo"
         />
@@ -102,7 +97,7 @@ export default {
     return {
       items: [
         {
-          icon: '&#9889;',
+          icon: 'mdi-apps',
           title: 'Artigos',
           to: '/'
         }
