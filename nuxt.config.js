@@ -13,6 +13,7 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: 'Blog do Rodolfo do Nascimento Azevedo com artigos, tutorias e muito mais sobre o mundo da programação' }
     ],
+    noscript: [{ innerHTML: 'This website requires JavaScript.' }],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
